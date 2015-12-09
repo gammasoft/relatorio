@@ -1,6 +1,6 @@
 {
   "name": "relatorio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gerador de relatórios em tabulares em .pdf",
   "main": "index.js",
   "scripts": {

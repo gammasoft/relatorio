@@ -138,7 +138,7 @@ printer = new PdfPrinter(fonts);
 module.exports = function(parametros, registros, callback) {
     var empresa = parametros.empresa,
         usuario = parametros.usuario,
-        pkg = parametros.pkg,
+        creditos = parametros.creditos,
         dataEHora = parametros.dataEHora || obterDataEHora(),
         reportHash = gammautils.crypto.md5(parametros.nome + JSON.stringify(registros));
 
@@ -403,12 +403,7 @@ module.exports = function(parametros, registros, callback) {
                     style: 'aindaMenor',
                     color: 'gray'
                 }, {
-                    text: [
-                        'Gammasoft Desenvolvimento de Software Ltda',
-                        ' - (61) 8633-3051',
-                        ' - GammaERP v' + pkg.version,
-                        ' © 2014 - ' + new Date().getFullYear(),
-                    ].join(''),
+                    text: creditos || 'Gammasoft Desenvolvimento de Software Ltda',
                     style: 'aindaMenor',
                     color: 'gray'
                 }];

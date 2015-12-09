@@ -11,9 +11,6 @@ var empresa = {
     usuario = {
         nome: 'Ciclano da Silva'
     },
-    pkg = {
-        version: '1.0.0'
-    },
     clientes = [{
         id: 1,
         tipo: 'cpf',
@@ -58,7 +55,7 @@ module.exports = {
         relatorio({
             empresa: empresa,
             usuario: usuario,
-            pkg: pkg,
+            creditos: empresa.nome + ' - todos os direitos reservados',
             nome: 'Listagem de Clientes',
             dataEHora: '09/12/2015 às 14:30',
             orientacao: 'paisagem',
