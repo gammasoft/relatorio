@@ -1,0 +1,29 @@
+{
+  "name": "relatorio",
+  "version": "1.0.0",
+  "description": "Gerador de relatórios em tabulares em .pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit ./tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gammasoft/relatorio.git"
+  },
+  "keywords": [
+    "relatorio",
+    "report",
+    "pdf",
+    "gammasoft"
+  ],
+  "author": "Renato Gama <renato@gammasoft.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gammasoft/relatorio/issues"
+  },
+  "homepage": "https://github.com/gammasoft/relatorio",
+  "dependencies": {
+    "gammautils": "0.0.73",
+    "pdfmake": "0.1.17"
+  }
+}
